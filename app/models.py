@@ -20,3 +20,9 @@ class User(BaseModel):
     gender:Gender #Enum Class is mentioned here
     roles:List[Roles] # one user can have many roles 
 
+class UserUpdateRewuest(BaseModel):
+    first_name:Optional[str] = None
+    last_name:Optional[str] = None
+    middle_name:Optional[str] = None
+    gender:Optional[Gender] = None
+    roles:Optional[List[Roles]] = None
